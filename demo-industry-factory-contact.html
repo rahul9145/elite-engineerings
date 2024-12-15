@@ -362,7 +362,7 @@
 			- Use https://www.latlong.net/convert-address-to-lat-long.html to get Latitude and Longitude of a specific address
 			*/
 			(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-				({key: "YOUR_API_KEY", v: "weekly"});
+				({key: "AIzaSyASXX1DSbIeWQ25K-ht-8lmvTr_WMpfE2w", v: "weekly"});
 
 			async function initMap() {
 				const { Map, InfoWindow } = await google.maps.importLibrary("maps");
@@ -371,13 +371,13 @@
 				);
 				const map = new Map(document.getElementById("googlemaps"), {
 					zoom: 14,
-					center: { lat: -37.817240, lng: 144.955820 },
-					mapId: "YOUR_MAP_API_ID",
+					center: { lat: 18.679962, lng: 74.115142 },
+					mapId: "6447e46c8bea3f4d",
 				});
 				const markers = [
 					{
-						position: { lat: -37.817240, lng: 144.955820 },
-						title: "Office 1<br>Melbourne, 121 King St, Australia<br>Phone: 123-456-1234",
+						position: { lat: 18.679962, lng: 74.115142 },
+						title: "Elite Engineering, Sanaswadi, Maharashtra 412208",
 					}
 				];
 
