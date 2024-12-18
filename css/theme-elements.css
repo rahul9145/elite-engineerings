@@ -15312,9 +15312,10 @@ html.boxed .nav-secondary.sticky-active {
 .process .process-step {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
 }
 
 .process .process-step-circle {

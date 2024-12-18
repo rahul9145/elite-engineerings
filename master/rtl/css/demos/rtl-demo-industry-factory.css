@@ -40,6 +40,10 @@ body {
 	font-size: 1.15em !important;
 }
 
+.custom-font-size-4 {
+	font-size: 1em !important;
+}
+
 .custom-positive-ls-5px {
 	letter-spacing: 5px !important;
 }
