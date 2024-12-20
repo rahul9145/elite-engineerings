@@ -234,7 +234,7 @@
 						</div>
 						<div class="col-lg-6">
 							<h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4">Send Us a Message</h2>
-							<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+							<form class="contact-form custom-form-style-1" action="https://elite-engineerings-backend-lyjy.vercel.app/api/send-email" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4">
 									<strong>Success!</strong> Your message has been sent to us.
 								</div>
@@ -252,6 +252,13 @@
 								<div class="row">
 									<div class="form-group col">
 										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<input type="text" value="" data-msg-required="Please enter a title/subject."
+											data-msg-email="Please enter a title/subject." maxlength="100" class="form-control" name="subject"
+											placeholder="Subject" required>
 									</div>
 								</div>
 								<div class="row">
