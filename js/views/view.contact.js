@@ -76,7 +76,7 @@ Theme Version:	12.0.0
 
 					$errorMessage.empty().hide();
 
-					if (response == 'success') {
+					if (textStatus == 'success') {
 
 						// Uncomment the code below to redirect for a thank you page
 						// self.location = 'thank-you.html';
@@ -106,8 +106,6 @@ Theme Version:	12.0.0
 						
 						return;
 
-					} else if (response == 'error' && typeof errorMessage !== 'undefined') {
-						$errorMessage.html(errorMessage).show();
 					} else {
 						$errorMessage.html(responseText).show();
 					}
