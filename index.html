@@ -611,45 +611,43 @@
 						</div>
 						<div class="col-lg-6">
 							<h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4">Send Us a Message</h2>
-							<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+							<form class="contact-form custom-form-style-1" action="https://elite-engineerings-backend-six.vercel.app/api/send-email" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4">
 									<strong>Success!</strong> Your message has been sent to us.
 								</div>
-				
+
 								<div class="contact-form-error alert alert-danger d-none mt-4">
 									<strong>Error!</strong> There was an error sending your message.
 									<span class="mail-error-message text-1 d-block"></span>
 								</div>
-				
+
 								<div class="row">
 									<div class="form-group col">
-										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100"
-											class="form-control" name="name" placeholder="Your Name" required>
+										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col">
-										<input type="email" value="" data-msg-required="Please enter your email address."
-											data-msg-email="Please enter a valid email address." maxlength="100" class="form-control"
-											name="email" placeholder="Email Address" required>
+										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col">
-										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="6"
-											class="form-control" name="message" placeholder="Your Message" required></textarea>
+										<input type="text" value="" data-msg-required="Please enter a title/subject."
+											data-msg-email="Please enter a title/subject." maxlength="100" class="form-control" name="subject"
+											placeholder="Subject" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col">
-										<button type="submit"
-											class="btn custom-svg-btn-style-1 custom-svg-btn-style-1-solid text-color-light text-uppercase"
-											data-loading-text="Loading...">
-											<svg class="custom-svg-btn-background" version="1.1" xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 70"
-												preserveAspectRatio="none">
-												<polygon fill="none" stroke="#D4D4D4" stroke-width="2" stroke-miterlimit="10"
-													points="7,5 185,5 205,34 186,63 7,63 " />
+										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message" required></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<button type="submit" class="btn custom-svg-btn-style-1 custom-svg-btn-style-1-solid text-color-light text-uppercase" data-loading-text="Loading...">
+											<svg class="custom-svg-btn-background" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 70" preserveAspectRatio="none">
+												<polygon fill="none" stroke="#D4D4D4" stroke-width="2" stroke-miterlimit="10" points="7,5 185,5 205,34 186,63 7,63 "/>
 											</svg>
 											Send Message
 										</button>
