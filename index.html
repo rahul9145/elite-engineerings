@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=3">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
 <script>(function(){var d=document.documentElement,t;d.classList.add('js');try{t=localStorage.getItem('ee-theme')}catch(e){}if(t==='light'||t==='dark')d.setAttribute('data-theme',t);addEventListener('load',function(){setTimeout(function(){if(!window.__ee)d.classList.remove('js')},800)})})()</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://www.elite-engineerings.com/#business","name":"Elite Engineerings","description":"Precision CNC, VMC, Traub and Citizen sliding-head machining. Spare parts and components for automotive, healthcare, electrical and industrial OEMs.","url":"https://www.elite-engineerings.com/","logo":"https://www.elite-engineerings.com/assets/img/ee-badge.png","image":"https://www.elite-engineerings.com/assets/img/og-image.jpg","telephone":"+91-9975557545","email":"elitenggs@gmail.com","foundingDate":"2021","slogan":"Manufacturing At Its Best","address":{"@type":"PostalAddress","streetAddress":"Gat No 879/1, Sanaswadi Nagar Road","addressLocality":"Pune","addressRegion":"Maharashtra","postalCode":"412216","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":18.662624,"longitude":74.094854},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"20:00"}],"areaServed":"IN","sameAs":["https://www.linkedin.com/company/elite-engneering/"]}</script>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js">
@@ -81,15 +81,15 @@
     <div class="hero-visual" aria-hidden="true">
       <div class="hero-fallback" style="background-image:url(/assets/img/turning.jpg)"></div>
       <div class="hero-canvas"></div>
-      <div class="hud-label" data-anchor="1.0,-0.69,0"><span class="pin"></span><span class="leader"></span><span class="tag"><b>HEX</b> · A/F 27</span></div>
+      <div class="hud-label" data-anchor="0.87,-0.69,0"><span class="pin"></span><span class="leader"></span><span class="tag"><b>HEX</b> · A/F 27</span></div>
       <div class="hud-label hud-opt" data-anchor="-0.67,0.26,0"><span class="pin"></span><span class="leader"></span><span class="tag"><b>O-RING SEAT</b> · Ra 0.8</span></div>
       <div class="hud-label" data-anchor="-0.46,2.25,0"><span class="pin"></span><span class="leader"></span><span class="tag"><b>THREAD</b> · M16 × 1.5</span></div>
       <div class="title-block">
         <div class="tb-head">Elite Engineerings <span>FIG. 01</span></div>
-        <div>Part<b>Union fitting</b></div>
-        <div>Process<b>CNC turning</b></div>
-        <div>Material<b>SS 304</b></div>
-        <div>Render<b>Real-time</b></div>
+        <div class="tb-opt">Part<b>Union fitting</b></div>
+        <div>Operation<b id="op-step">OP 00</b></div>
+        <div>Process<b id="op-name">Raw bar stock</b></div>
+        <div class="tb-opt">Material<b>SS 304</b></div>
       </div>
     </div>
   </div>
@@ -315,7 +315,7 @@
     <div>
       <span class="eyebrow reveal">Special machine</span>
       <h2 class="display h-md split" id="a20-h" style="margin:22px 0 22px">Citizen A20 sliding head.</h2>
-      <p class="lead reveal">A high-performance Swiss-type CNC lathe built for small, intricate, high-precision components — the same class of machine trusted across automotive, medical and aerospace manufacturing.</p>
+      <p class="lead reveal">A high-performance Swiss-type CNC lathe built for small, intricate, high-precision components — and with our third Citizen arriving in 2026, we now run three of them.</p>
       <ul class="spec-list">
         <li class="reveal"><span class="mono">A</span><div><b>High precision &amp; accuracy</b><span class="d">Consistent, tight-tolerance parts with fewer rejects.</span></div></li>
         <li class="reveal"><span class="mono">B</span><div><b>Versatility &amp; flexibility</b><span class="d">Turning, milling, drilling and tapping in one cycle.</span></div></li>
@@ -437,7 +437,7 @@
   </div>
 </footer>
 <a class="fab" href="https://wa.me/919975557545?text=Hi%20Elite%20Engineerings%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.3-18.1C18.1 1.5 15.1.2 12 .2 5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.1 24l6.3-1.7c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.2z"/></svg><span>Chat on WhatsApp</span></a>
-<script src="/assets/js/site.js?v=3" defer></script>
-<script type="module" src="/assets/js/hero3d.js?v=3"></script>
+<script src="/assets/js/site.js?v=4" defer></script>
+<script type="module" src="/assets/js/hero3d.js?v=4"></script>
 </body>
 </html>

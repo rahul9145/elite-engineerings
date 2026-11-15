@@ -166,8 +166,9 @@
         var host = el.parentElement.getBoundingClientRect();
         if (host.bottom < 0 || host.top > vh) return;
         var k = parseFloat(el.getAttribute("data-parallax")) || 0.1;
-        var c = (host.top + host.height / 2 - vh / 2) * -k;
-        el.style.transform = "translate3d(0," + c.toFixed(1) + "px,0) scale(1.12)";
+        var max = host.height * 0.065; // stay inside the 15% overscan so no edge ever shows
+        var c = Math.max(-max, Math.min(max, (host.top + host.height / 2 - vh / 2) * -k));
+        el.style.transform = "translate3d(0," + c.toFixed(1) + "px,0) scale(1.15)";
       });
     }
   }
